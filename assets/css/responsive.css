@@ -1,0 +1,23 @@
+/* 400 */
+@media(min-width: 400px) {}
+
+/* 576 */
+@media(min-width: 576px) {
+
+    /* 768 */
+    @media(min-width: 767px) {
+
+        .section_padding {
+            padding: 50px 0px;
+        }
+    }
+}
+
+/* 992 */
+@media(min-width: 992px) {}
+
+/* 1240 */
+@media(min-width: 1200px) {}
+
+/* 1400 */
+@media(min-width: 1400px) {}
