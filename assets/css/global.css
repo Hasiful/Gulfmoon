@@ -31,7 +31,7 @@ hr {
 
 :root {
     --hero-color: #0E1681;
-    --main-color: #080d4d;
+    --main-color: #0E1681;
     --primary-color: #119d55;
     --heading-color: #03163B;
     --secondary-color: #131415;
@@ -55,7 +55,7 @@ a {
 }
 
 .container {
-    max-width: 1320px;
+    max-width: 1250px;
     width: 100%;
     margin: 0px auto;
     padding: 0px 10px;
@@ -105,20 +105,25 @@ textarea.input_control {
 /* section title */
 
 .section_title {
+    max-width: 760px;
     width: 100%;
-    margin: 0px auto 20px;
+    margin: 0px auto 40px;
 }
 
-.section_heading {
-    font-size: 16px;
-    line-height: 24px;
-    color: var(--main-color);
-    text-transform: uppercase;
-    font-weight: 700;
+.section_title_content {
+    text-align: center;
 }
 
-.section_heading span {
-    color: var(--text-color);
+.section_title_subheading {
+    font-size: 18px;
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.section_title_heading {
+    font-size: 36px;
+    line-height: 40px;
+    margin-bottom: 15px;
 }
 
 /* slick slider */
