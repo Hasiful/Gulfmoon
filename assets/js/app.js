@@ -1,6 +1,34 @@
-// client slider
 
-// offer
+const selectElement = {
+  navCollapse: document.getElementById("collapse_btn"),
+  sideBar: document.getElementById("sidebar_nav"),
+  closeBtn: document.getElementById("close_btn")
+}
+
+// destructure
+const { navCollapse, sideBar, closeBtn } = selectElement
+
+// collapse btn
+navCollapse.addEventListener("click", function(){
+  sideBar.style.cssText = "left: 0px"
+})
+
+// close btn
+closeBtn.addEventListener("click", function(){
+  sideBar.style.cssText = "left: -100%"
+})
+
+// window click remove sidebar
+
+window.addEventListener("click", (e) => {
+  let eTarget = e.target;
+  if (!eTarget.closest("#collapse_btn") && !eTarget.closest("#sidebar_nav")) {
+    sideBar.style.left = "-100%"
+  }
+});
+
+
+// client slider
 $(function (e) {
   "use strict";
   e(".client_slider").slick({
@@ -31,7 +59,7 @@ $(function (e) {
       breakpoint: 576,
       settings: {
         autoplay: !1,
-        slidesToShow: 1,
+        slidesToShow: 2,
       }
     }
     ]

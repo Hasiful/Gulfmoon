@@ -33,7 +33,7 @@
             <!-- header section -->
             <header class="header_section">
                 <!-- header top -->
-                <div class="header_top">
+                <div class="header_top d-none d-md-block">
                     <div class="container">
                         <!-- wrapper -->
                         <div class="header_top_wrapper">
@@ -104,8 +104,15 @@
                                 </a>
                             </div>
                             <!-- header nav -->
-                            <nav class="header_nav">
+                            <nav class="header_nav" id="sidebar_nav">
                                 <ul class="header_nav_list">
+                                    <li class="mobile_logo">
+                                        <a href="">
+                                            <img src="assets/image/logo.png" alt="">
+                                        </a>
+                                        <!-- close btn -->
+                                        <span id="close_btn"><i class="fa-solid fa-xmark"></i></span>
+                                    </li>
                                     <li class="header_nav_item">
                                         <a href="" class="header_nav_link">Home</a>
                                     </li>
@@ -137,8 +144,12 @@
                                         </p>
                                     </div>
                                     <!-- header button -->
-                                    <div class="header_button">
+                                    <div class="header_button d-none d-lg-block">
                                         <a href="">Contact Us</a>
+                                    </div>
+                                    <!-- collapse button -->
+                                    <div id="collapse_btn" class="collapse_btn d-lg-none">
+                                        <span><i class="fa-solid fa-bars"></i></span>
                                     </div>
                                 </div>
                             </div>
@@ -338,12 +349,12 @@
                         opposed
                         to using 'Content here, content here', making it
                         look like readable English</p>
-                    
+
                     <!-- button -->
                     <div class="header_button about_button">
                         <a href="">Learn More</a>
                     </div>
-                </div>   
+                </div>
             </div>
         </div>
     </section>
