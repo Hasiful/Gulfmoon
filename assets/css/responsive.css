@@ -62,12 +62,35 @@
     .blog_item {
         width: calc(100% / 3 - 16px);
     }
+
+    .over_view_title {
+        font-size: 28px;
+        line-height: 28px;
+    }
 }
 
 /* 992 */
 @media(min-width: 992px) {
     .mobile_logo {
         display: none;
+    }
+
+    .contact_info::after {
+        display: block;
+    }
+
+    .contact_wrapper {
+        padding: 50px 40px;
+    }
+
+    .contact_info {
+        width: calc(50% - 12px);
+        padding-left: 50px;
+    }
+
+    .contact_form {
+        width: calc(50% - 12px);
+        padding: 50px;
     }
 
     .banner_content_title {
