@@ -11,7 +11,6 @@
     background-color: var(--main-color);
 }
 
-
 .header_top_wrapper {
     display: flex;
     align-items: center;
@@ -926,4 +925,12 @@
     flex-basis: calc(100% - 20px);
     margin-left: 15px;
     color: #DDD;
+}
+
+/* .dr_rtl {
+    direction: rtl;
+} */
+
+.dark-theme{
+    background: var(--heading-color);
 }
