@@ -11,6 +11,18 @@
     background-color: var(--main-color);
 }
 
+.dark-theme .header_top {
+    background-color: var(--heading-color);
+}
+
+.dark-theme .main_header {
+    background-color: var(--heading-color);
+}
+
+.dark-theme .header_nav_link {
+    color: var(--global-color);
+}
+
 .header_top_wrapper {
     display: flex;
     align-items: center;
@@ -299,6 +311,10 @@
     background: var(--main-color);
 }
 
+.dark-theme .client_section {
+    background-color: var(--heading-color);
+}
+
 .client_slider_item {
     background: var(--global-color);
     padding: 12px 15px;
@@ -326,10 +342,113 @@
     background: var(--main-color);
 }
 
+.dark-theme .our_service {
+    background-color: var(--heading-color);
+}
+
+.dark-theme .section_title_heading,
+.dark-theme .section_title_subheading {
+    color: var(--global-color);
+}
+
+.dark-theme .client_slider_item {
+    background: rgb(24 47 116 / 41%);
+}
+
+.dark-theme .section_title_text {
+    color: var(--bg-color);
+}
+
+.dark-theme .our_service_content {
+    background: rgb(24 47 116 / 41%);
+}
+
+.dark-theme .service_item {
+    background-color: var(--heading-color);
+}
+
+.dark-theme .service_item_title {
+    color: var(--global-color);
+}
+
+.dark-theme .about_section {
+    background: var(--heading-color);
+}
+
+.dark-theme .company_overview {
+    background-color: rgb(24 47 116 / 41%);
+}
+
 .our_service_content {
     background: var(--global-color);
     padding-top: 85px;
     padding-bottom: 50px;
+}
+
+.dark-theme .overview_tabnav {
+    background: #03163bad;
+}
+
+.dark-theme .over_view_title {
+    color: var(--global-color);
+}
+
+.dark-theme .over_view_subtitle {
+    text-transform: uppercase;
+    color: var(--heading-color);
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--global-color) 0%, var(--primary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 5px;
+}
+
+.dark-theme .overview_tabnav .nav-link {
+    color: var(--global-color);
+}
+
+.dark-theme .over_content_mainheading {
+    background: var(--main-color);
+}
+
+.dark-theme .service_item_text {
+    color: var(--bg-color);
+}
+
+.dark-theme .blog_item {
+    background: #0c2053;
+}
+
+.dark-theme .blog_item_title {
+    color: var(--global-color);
+}
+
+.dark-theme .blog_item_text,
+.dark-theme .blog_date {
+    color: var(--bg-color);
+}
+
+.dark-theme .certification_section {
+    background: #0c2053;
+}
+
+.dark-theme .overview_tabnav_body .tab-content {
+    background: #061943;
+}
+
+.dark-theme .policylist_title {
+    color: var(--global-color);
+}
+
+.dark-theme .contact_form {
+    background: #061943;
+}
+
+.dark-theme .footer-area {
+    background: #0c2053;
 }
 
 .service_wrapper {
@@ -841,10 +960,36 @@
 
 .footer-area {
     background: var(--heading-color);
+    position: relative;
+    z-index: 1;
 }
 
+.vector-bg {
+    background: url(../image/fotter.png);
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 100%;
+    height: 100%;
+    background-repeat: repeat-x;
+    animation: slide 100s linear infinite;
+    -webkit-animation: slide 100s linear infinite;
+    z-index: -1;
+}
+
+@keyframes slide {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 1920px 0;
+    }
+}
+
+
 .space__bottom--40 {
-    margin-bottom: 40px;
+    margin-bottom: 10px;
 }
 
 .footer-widget__logo {
@@ -923,14 +1068,43 @@
     line-height: 1.2;
     -ms-flex-preferred-size: calc(100% - 20px);
     flex-basis: calc(100% - 20px);
-    margin-left: 15px;
     color: #DDD;
 }
 
-/* .dr_rtl {
+.dr_rtl {
     direction: rtl;
-} */
+}
 
-.dark-theme{
+.dr_rtl .header_nav {
+    right: -100%;
+}
+
+.dr_rtl .header_nav.activeSide {
+    right: 0px;
+}
+
+.header_nav.activeSide {
+    left: 0px;
+}
+
+.client_section{
+    direction: ltr !important;
+}
+
+.dark-theme .header_nav {
+    background: #03163b;
+}
+
+.dark-theme {
     background: var(--heading-color);
+}
+
+.dark-theme .contact_input_inner input,
+.dark-theme .contact_input_inner textarea {
+    color: var(--global-color);
+    background: var(--main-color);
+}
+
+.dark-theme .service_item_icon i {
+    color: var(--global-color);
 }

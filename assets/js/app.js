@@ -10,12 +10,12 @@ const { navCollapse, sideBar, closeBtn } = selectElement
 
 // collapse btn
 navCollapse.addEventListener("click", function(){
-  sideBar.style.cssText = "left: 0px"
+  sideBar.classList.add("activeSide")
 })
 
 // close btn
 closeBtn.addEventListener("click", function(){
-  sideBar.style.cssText = "left: -100%"
+  sideBar.classList.remove("activeSide")
 })
 
 // window click remove sidebar
@@ -23,7 +23,7 @@ closeBtn.addEventListener("click", function(){
 window.addEventListener("click", (e) => {
   let eTarget = e.target;
   if (!eTarget.closest("#collapse_btn") && !eTarget.closest("#sidebar_nav")) {
-    sideBar.style.left = "-100%"
+    sideBar.classList.remove("activeSide")
   }
 });
 
@@ -99,11 +99,11 @@ function setTheme() {
   if (isDarkTheme === "1") {
     document.body.classList.add("dark-theme");
     ligt_theme.style.cssText = "display: none"
-    dark_theme.style.cssText = "display: block"
+    dark_theme.style.cssText = "display: grid"
   } else {
     document.body.classList.remove("dark-theme");
     dark_theme.style.cssText = "display: none"
-    ligt_theme.style.cssText = "display: block"
+    ligt_theme.style.cssText = "display: grid"
   }
 }
 setTheme();

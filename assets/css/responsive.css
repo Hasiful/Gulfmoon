@@ -111,6 +111,11 @@
         margin-right: 50px;
     }
 
+    .dr_rtl .overview_tabnav {
+        margin-left: 50px;
+        margin-right: 0px;
+    }
+
     .overview_tabnav::before {
         display: block;
     }
